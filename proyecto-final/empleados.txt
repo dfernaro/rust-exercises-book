@@ -1,0 +1,14 @@
+Empleado 1:
+- Luis
+- Rodríguez
+- 51
+- IT
+- FEBRERO
+
+Empleado 1:
+- Marina
+- Flores
+- 42
+- MARKETING
+- SEPTIEMBRE
+
