@@ -52,14 +52,14 @@ fn main() {
 
     // Se guardan los empleados en una lista
     let empleados: [Empleado; 2] = [empleado1, empleado2];
-    let total = 1;
+    let mut numero_empleado = 1;
 
     // Se crea un fichero llamado empleados.txt
     let mut fichero = std::fs::File::create("empleados.txt").expect("Error durante la creación");
 
     // Recorrer la lista de empleados y guardar la información
     for empleado in empleados {
-        let titulo: String = format!("Empleado {}:\n", total);
+        let titulo: String = format!("Empleado {}:\n", numero_empleado);
         let contenido: String = format!(
             "- {}\n- {}\n- {}\n- {:?}\n- {:?}\n\n",
             empleado.nombre, empleado.apellidos, empleado.edad, empleado.especialidad, empleado.mes
@@ -71,5 +71,7 @@ fn main() {
         fichero
             .write_all(contenido.as_bytes())
             .expect("Error durante la escritura");
+
+        numero_empleado += 1;
     }
 }

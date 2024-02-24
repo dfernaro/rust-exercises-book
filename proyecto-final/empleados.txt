@@ -5,7 +5,7 @@ Empleado 1:
 - IT
 - FEBRERO
 
-Empleado 1:
+Empleado 2:
 - Marina
 - Flores
 - 42
